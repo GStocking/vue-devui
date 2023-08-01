@@ -19,6 +19,7 @@ function buildCategoryOptions(text, children = []) {
 }
 
 function generateZhMenus(componentsInfo) {
+  console.log('componentsInfo', componentsInfo);
   const categoryMap = VITEPRESS_SIDEBAR_CATEGORY.reduce((map, cate) => map.set(cate, []), new Map());
   componentsInfo.forEach((info) => {
     if (categoryMap.has(info.category)) {
@@ -62,18 +63,6 @@ exports.createVitepressSidebarTemplates = (componentsInfo = []) => {
           text: '按需引入',
           link: '/on-demand/',
         },
-        {
-          text: '主题定制',
-          link: '/theme-guide/',
-        },
-        {
-          text: '在 Nuxt3 中使用',
-          link: '/nuxt3/',
-        },
-        {
-          "text": "Design Token",
-          "children": DESIGN_TOKENS_INFO
-        },
       ],
       handler: generateZhMenus,
       lang: 'zh',
@@ -87,14 +76,6 @@ exports.createVitepressSidebarTemplates = (componentsInfo = []) => {
         {
           text: 'On-demand Import',
           link: '/on-demand/',
-        },
-        {
-          text: 'Theme Guide',
-          link: '/theme-guide/',
-        },
-        {
-          "text": "Design Token",
-          "children": DESIGN_TOKENS_INFO
         },
       ],
       handler: generateEnMenus,

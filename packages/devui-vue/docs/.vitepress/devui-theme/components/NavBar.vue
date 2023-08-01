@@ -104,9 +104,9 @@ const switchLang = () => {
           <div class="custom-nav-item ml-m" @click="switchLang" v-if="false">
             {{ LANG_MAP[currentLang] }}
           </div>
-          <div class="custom-nav-item flex items-center ml-m">
+          <!-- <div class="custom-nav-item flex items-center ml-m">
             <ThemePicker v-model="currentTheme"></ThemePicker>
-          </div>
+          </div> -->
           <a class="custom-nav-item ml-m" style="font-size: 0;user-select:none"
             href="https://github.com/DevCloudFE/vue-devui" target="_blank">
             <svg viewBox="0 0 20 20" width="18" height="18">

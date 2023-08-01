@@ -26,7 +26,7 @@ const validContributors = computed(() => {
 
 <template>
   <div class="page-contributor">
-    <a v-for="contributor of validContributors" :href="contributor.homepage" target="_blank">
+    <!-- <a v-for="contributor of validContributors" :href="contributor.homepage" target="_blank">
       <Avatar
         v-if="contributor.avatar"
         class="contributor-avatar"
@@ -38,7 +38,7 @@ const validContributors = computed(() => {
         :width="avatarSize"
         :height="avatarSize"
       />
-    </a>
+    </a> -->
   </div>
 </template>
 

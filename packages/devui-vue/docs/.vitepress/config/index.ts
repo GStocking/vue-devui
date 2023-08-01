@@ -1,14 +1,11 @@
 import { defineConfig } from 'vitepress'
-import sidebar from './sidebar'
-import head from './head'
-import nav from './nav'
 import markdown from './markdown'
 import lang from './lang'
+import sidebar from './sidebar'
 
 const config = defineConfig({
-  title: 'Vue DevUI',
-  description: 'Vue DevUI 组件库',
-  head,
+  title: 'New Biz',
+  description: 'New Biz 组件库',
   markdown,
   locales: {
     '/': {
@@ -22,7 +19,6 @@ const config = defineConfig({
   },
   themeConfig: {
     sidebar,
-    nav,
     demoblock: lang,
     logo: '../../assets/logo.svg',
     locales: {

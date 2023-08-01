@@ -62,6 +62,3 @@ npm run dev
 
 参考：[按需引入](/on-demand/)
 
-### 7 主题定制
-
-参考：[主题定制](/theme-guide/)
